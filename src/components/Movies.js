@@ -4,7 +4,7 @@ import Movie from "./Movie"
 
 function Movies() {
   const moviesList=movies.map(movie =>
-     <Movie movie={movie} key={movie.name}/>)
+     <Movie movie={movie} key={movie.title}/>)
   
      
   return(
