@@ -1,7 +1,7 @@
 import React from "react";
 
-function NameAndMovies(props){
-    const myVar = props.actors || props.director
+function NameMovies(props){
+    const myVar = props.actor || props.director
 
     const movies = myVar.movies.map(movie =>
         <li key={movie}>{movie}</li>)
@@ -16,4 +16,5 @@ function NameAndMovies(props){
 
 }
 
-export default NameAndMovies
+
+export default NameMovies;
